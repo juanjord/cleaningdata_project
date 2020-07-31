@@ -1,6 +1,7 @@
 The package dplyr was used for cleaning and summarizing.In order to merge the train and test data in one data set, the first step consists in reading the files "X_test.txt" and "X_train.txt". Next, read the files "y_test.txt", "subject_test.txt", "y_train.txt", "subject_train.txt" to get the subject and activity column.
 
-*Reading and merging data*
+**Reading and merging data**
+
 In this case, the subject and the activity can be read as factor variables using 
 colClasses = "factor" in the function.
 
@@ -26,7 +27,7 @@ dim(test)
 dim(train)
 data <- rbind(test, train)
 
-*Extract measurements on the mean and standard deviation*
+**Extract measurements on the mean and standard deviation**
 
 Now I have to extract the measurements on the mean and standard deviation, with the 
 "features.txt" file. In this case, I am considering only the variables that ends with 
@@ -45,7 +46,8 @@ This new data set now has only 18 variables, so now the feature labels can be sa
 these 18 measurements names, in order to use them for the column names in the data set.
 
 
-*Giving descriptive variable names and activity names*
+**Giving descriptive variable names and activity names**
+
 feat_labels <- feat[feat2,][,2]
 colnames(data) <- feat_labels
 head(names(data))
@@ -63,7 +65,7 @@ data$activity <- factor(data$activity, levels = c(1,2,3,4,5,6),
                               "sitting","standing","laying"))
 data <- tbl_df(data)
 
-*Summarizing data*
+**Summarizing data**
 
 Now this new data set contains 20 columns in total, and now it can be summarized in
 order to obtain the average of each variable for each activity and each subject.
