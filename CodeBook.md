@@ -7,13 +7,15 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 
 # Analysis
 =========================================
+
 To get a data set which summarizes the average of each variable for each activity and each subject, the train and test datasets were merged into one dataset, then only variables that end with "mean()" or "std()" were considered, meaning only those that calculate a general
 mean and standard deviation. This new data set is summarized by activity performed and
 subject. It has 18 measurements variables and the values obtained are the average for each activity and each subject.
 
 # Variables
 =========================================
-# The new data set has 20 variables:
+
+The new data set has 20 variables:
 
 tBodyAccMag-mean(): Body linear acceleration time, mean
 tBodyAccMag-std(): Body linear acceleration time, standard deviation
