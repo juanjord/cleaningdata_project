@@ -36,6 +36,8 @@ data$subject <- subject_set$subject
 data$activity <- factor(data$activity, levels = c(1,2,3,4,5,6), 
                   labels =  c("walking","walking up","walking down",
                               "sitting","standing","laying"))
+
+# Summarizing and creating tidy data set
 data <- tbl_df(data)
 
 # From the data set created, group by activity and subject to get the average
