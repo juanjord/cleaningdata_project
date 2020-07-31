@@ -21,7 +21,8 @@ dim(test)
 dim(train)
 data <- rbind(test, train)
 
-# Extract the measurements on the mean and standard deviation.
+# Extract the measurements on the mean and standard deviation 
+# (only match if end with mean() or std()).
 feat <- read.table("features.txt")
 feat2 <- grep("mean\\()$|std\\()$", feat[,2])
 data <- data[,feat2]
