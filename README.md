@@ -63,9 +63,10 @@ data$subject <- subject_set$subject
 data$activity <- factor(data$activity, levels = c(1,2,3,4,5,6), 
                   labels =  c("walking","walking up","walking down",
                               "sitting","standing","laying"))
-data <- tbl_df(data)
 
-**Summarizing data**
+**Summarizing data and creating tidy data set**
+
+data <- tbl_df(data)
 
 Now this new data set contains 20 columns in total, and now it can be summarized in
 order to obtain the average of each variable for each activity and each subject.
