@@ -64,7 +64,7 @@ data$activity <- factor(data$activity, levels = c(1,2,3,4,5,6),
                   labels =  c("walking","walking up","walking down",
                               "sitting","standing","laying"))
 
-**Summarizing data and creating tidy data set**
+**Summarizing and creating tidy data set**
 
 data <- tbl_df(data)
 
