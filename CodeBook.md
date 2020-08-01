@@ -1,4 +1,9 @@
-# Codebook
+# Getting and Cleaning data Course Project
+
+One of the most exciting areas in all of data science right now is wearable computing. Companies like Fitbit, Nike, and Jawbone Up are racing to develop the most advanced algorithms to attract new users.
+
+The purpose of this project is to collect and clean the raw data collected from the accelerometers of the Samsung Galaxy S smartphone. The output is a tidy data set which could be potentially used for further analysis and research.
+
 =========================================
 
 The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. Using this dataset, a new one The obtained dataset has been obtained in order to obtain average measurements for each variable.
@@ -8,9 +13,12 @@ The sensor signals (accelerometer and gyroscope) were pre-processed by applying 
 # Analysis
 =========================================
 
-To get a data set which summarizes the average of each variable for each activity and each subject, the train and test datasets were merged into one dataset, then only variables that end with "mean()" or "std()" were considered, meaning only those that calculate a general
-mean and standard deviation. This new data set is summarized by activity performed and
-subject. It has 18 measurements variables and the values obtained are the average for each activity and each subject.
+In order to get a data set which summarizes the average of each variable for each activity and each subject, the train and test 
+datasets were merged into one dataset, were there was a total of 10299 observations between train a test data sets. Afther this, only variables that end 
+with "mean()" or "std()" were considered, meaning only those that calculate a more general mean and standard deviation for the measuremments. The new tidy data set is 
+summarized and group by activity performed and subject.
+It has 18 measurements variables and the values obtained are the average for each activity and each subject. This analysis was performed in the R script file
+"run_analysis.R"
 
 # Variables
 =========================================
