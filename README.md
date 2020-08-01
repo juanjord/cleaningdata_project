@@ -1,3 +1,5 @@
+## **Files**
+
 The package dplyr was used for cleaning and summarizing.In order to merge the train and test data in one data set, the first step consists in reading the files "X_test.txt" and "X_train.txt". Next, read the files "y_test.txt", "subject_test.txt", "y_train.txt", "subject_train.txt" to get the subject and activity column.
 
 ## **Reading and merging data**
