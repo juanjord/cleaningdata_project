@@ -48,3 +48,5 @@ group_data <- (data
     %>% summarise_if(is.numeric, mean, na.rm = TRUE)
     %>% print)
 
+# write the tidy data set created above
+write.table(group_data, file = "dataset.txt", row.names = FALSE)
