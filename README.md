@@ -38,5 +38,5 @@ the dplyr package, to get the mean for the rest of the columns. In this case, th
 columns are measurements, and they are all numeric.
 
 Finally, the average is obtained for each variable and the data set now has 180 rows
-and 20 columns. This is a tidy data set with headers, each variable has a different column,
+and 20 columns. This is a tidy data set (group_data in the R script) with headers, each variable has a different column,
 and there are no duplicate columns.
